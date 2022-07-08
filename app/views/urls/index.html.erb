@@ -6,7 +6,7 @@
     <li>id:<%= url.id %></li>
     <li>Description: <%= url.description %></li>
     <li>Long URL: <%= url.long_url %></li>
-    <li>Shorten URL:<%= link_to "#{@domain}/#{url.short_url}", url.long_url %></li>
+    <li>Shorten URL:<%= link_to "#{@domain}/#{url.short_url}", url.long_url%></li>
     <li>
       <%= form_for url, url: url_path(url), method: :delete do |f| %>
         <%= f.submit 'delete' %>
