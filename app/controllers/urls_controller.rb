@@ -23,6 +23,10 @@ class UrlsController < ApplicationController
     end
   end
 
+  def edit
+
+  end
+  
   def destroy
     if @url.destroy
       redirect_to urls_path
